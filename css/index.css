@@ -26,6 +26,21 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
 .container {
 	width: 800px;
 	margin: auto;
@@ -53,16 +68,26 @@ time, mark, audio, video {
 	text-decoration: none;
 }
 
-.top {
+.content {
 	display: flex;
-	justify-content: space-between;
-	width: 100%;
+	flex-wrap: wrap;
 }
 
 .top-left {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	width: 50%;
 }
+
+.top-image {
+	width: 50%;
+}
+
+.top-section-text-box {
+	width: 50%;
+}
+
+.bottom-section-text-box {
+	width: 33%;
+}
+
 
 

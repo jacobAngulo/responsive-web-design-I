@@ -26,6 +26,43 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 
+.container {
+	width: 800px;
+	margin: auto;
+}
 
+.middle-image {
+	width: 100%;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 50px 0;
+}
+
+.nav-bar {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-right: 50px;
+}
+
+.nav-bar a {
+	text-decoration: none;
+}
+
+.top {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.top-left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
 
 

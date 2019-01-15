@@ -1,3 +1,295 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.container {
+	width: 900px;
+	margin: auto;
+}
+
+@media( max-width: 1024px ) {
+	.container {
+		width: 900px;
+		margin: auto;
+	}
+}
+
+@media( max-width: 400px ) {
+	.container {
+		width: 100%;
+		margin: auto;
+	}
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 0;
+	align-items: center;
+}
+
+@media( max-width: 1024px ) {
+	.nav {
+		display: flex;
+		flex-direction: column-reverse;
+		width: 100%;
+	}
+}
+
+@media( max-width: 400px ) {
+	.nav {
+		width: 100%;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}
+
+.nav-bar {
+	width: 75%;
+	display: flex;
+	justify-content: space-around;
+}
+
+@media( max-width: 1024px ) {
+	.nav-bar {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+}
+
+@media( max-width: 400px ) {
+	.nav-bar {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.nav-bar a {
+	color: lightgray;
+}
+
+.logo {
+	display: initial;
+}
+
+@media( max-width: 1024px ) {
+	.logo {
+		padding-bottom: 30px;
+	}
+}
+
+@media( max-width: 400px ) {
+	.logo {
+		padding-bottom: 30px;
+	}
+}
+
+.nav-bar a {
+	text-decoration: none;
+}
+
+@media( max-width: 400px ) {
+	.nav-bar a {
+		width: 100%;
+		text-align: center;
+		padding: 10px 0;
+		border-top: 1px solid gray;
+	}
+}
+
+.top-bar {
+	display: flex;
+	width: 100%;
+	align-items: center;
+}
+
+.top-left {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@media( max-width: 1024px ) {
+	.top-left {
+		width: 100%;
+		align-items: center;
+	}
+}
+
+@media( max-width: 400px ) {
+	.top-left {
+		width: 100%;
+		align-items: center;
+		border-top: 1px solid gray;
+		margin-top: -45px;
+		padding-top: 50px;
+	}
+}
+
+.top-left-text {
+	text-align: center;
+	font-size: 75px;
+}
+
+.top-left-button {
+	background: none;
+	height: 30px;
+	width: 150px;
+	border: 1px solid black;
+}
+
+.top-image {
+	display: inherit;
+}
+
+@media( max-width: 1024px ) {
+	.top-image {
+		display: none;
+	}
+}
+
+@media( max-width: 400px ) {
+	.top-image {
+		display: none;
+	}
+}
+
+.top-section {
+	width: 100%;
+	display: flex;
+	margin-top: 50px;
+	padding-top: 50px;
+	border-top: 1px solid black;
+}
+
+@media( max-width: 400px ) {
+	.top-section {
+		width: 100%;
+		margin-top: 0px;
+		display: flex;
+		flex-direction: column;
+		border-top: none;
+	}
+}
+
+.top-section-box {
+	width: 50%;
+}
+
+@media( max-width: 400px ) {
+	.top-section-box {
+		width: 100%;
+		border-top: none;
+		padding: 10px;
+	}
+}
+
+.middle-image {
+	margin: 20px 0;
+	width: 100%;
+}
+
+@media( max-width: 400px ) {
+	.middle-image {
+		padding: 0 10px;
+	}
+}
+
+.bottom-section {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding-bottom: 50px; 
+	border-bottom: 1px solid black;
+}
+
+@media( max-width: 400px ) {
+	.bottom-section {
+		border-bottom: none;
+		padding-bottom: 0;
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.bottom-section-box {
+	width: 30%;
+}
+
+@media( max-width: 400px ) {
+	.bottom-section-box {
+		width: 100%;
+		padding: 10px;
+	}
+}
+
+.bottom-contact-section {
+	width: 100%;
+	margin-top: 50px;
+}
+
+@media( max-width: 400px ) {
+	.bottom-contact-section {
+		padding: 10px;
+	}
+}
+
+.copyright {
+	padding-top: 50px; 
+	text-align: center;
+}
+
+
+
+
+
+
+
+@media( max-width: 1024px ) {}
+
+@media( max-width: 400px ) {}
+
 
 
